@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* We don't need to use CSS reset for this assignment, but good to practice spacing and such */
 /* -----------------------------
 Starting my CSS file for midterm
 ----------------------------- */
