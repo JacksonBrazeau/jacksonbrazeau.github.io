@@ -54,10 +54,10 @@ Starting my CSS file for midterm
 html{
     font-size: 1rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #aad4cf
+    background: #aad4cf
 }
 body{
-    background-color: #c9e4e1;
+    background: #c9e4e1;
    
 }
 .testing-size{
