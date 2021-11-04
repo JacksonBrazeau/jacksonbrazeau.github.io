@@ -3,25 +3,85 @@
   <head>
     <meta charset="UTF-8">
     <title>Lone Starfish</title>
-    <link href="styles/midterm.css" rel="stylesheet">
+    <link href="styles/css.css" rel="stylesheet">
   </head>
+  <!-- First edits for midterm -->
   <body>
-    <!-- First edits for midterm -->
+
     <div id="container">
+
       <header>
         <!-- Use the image tag to add the image and position the site title on top of it-->
-        <img class="header image" src="images/lone-starfish-wide.jpg" alt="Photo of starfish in the ocean water">
-        Lone Starfish
+        <h1>Lone Starfish</h1>
+        <img src="images/lone-starfish-wide.jpg" alt="Photo of starfish in the ocean water">
       </header>
-      <article>
-          <!-- We can use sections or divs to seperate text, Class 6 @ 2:42-->
-          <p>
-            Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
-          </p>
-          <span class="testing-size">Jackson</span>
+
+      <nav>
+        <ul>
+          <li>
+            <a href"HOME">HOMEPAGE</a>
+          </li>
+          <li>
+            STORY
+          </li>
+          <li>
+            CONTACT
+          </li>
+        </ul>
+      </nav>
+
+      <article> <!-- We can use sections or divs to seperate text, Class 6 @ 2:42-->
+        <h2>Life of a Starfish</h2>
+        <img src="images/lone-starfish.jpg" alt="Closeup of starfish">
+        <!--Had img inside paragraph but going to try having it outside to see if works the same-->
+        <p>
+          Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.
+        </p>
       </article>
+
+      <div>
+        <h2>Facts About Starfish</h2>
+        <!-- Noticed he has the indent removed in the mock up, so try to do that as well-->
+        <ul>
+          <li>
+            Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
+          </li>
+          <li>
+            Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
+          </li>
+          <li>
+            Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
+          </li>
+          <li>
+            Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Contact to Learn More</h2>
+        <form action="index.html" method="post">
+          <label for="fullname">Your Name</label> <br>
+          <input id="fullname" type="text" name="fullname"> <br>
+          <label for="email">Your Email</label> <br>
+          <input id="email" type="email" name="email"> <br>
+          <label for="message">Message</label> <br>
+          <input id="message" type="text" name="message">
+        </form>
+        <br>
+        <h3>Would you like to visit the starfish?</h3>
+        <form action="thanks.html" method="post">
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="yes">
+          <label for="no">No</label>
+          <input type="radio" id="no" name="no">
+          <label for="maybe">Maybe</label>
+          <input type="radio" id="maybe" name="maybe">
+        </form>
+        <span>SEND</span>
+      </div>
+
+      <footer>&copy;Lone Starfish</footer> <!--Add footer with C an Lone Starfish copyright, &copy; makes logo-->
     </div>
   </body>
-  <footer>© Lone Starfish</footer>
-  <!--Add footer with C an Lone Starfish copyright info-->
 </html>
