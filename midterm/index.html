@@ -12,26 +12,26 @@
 
       <header>
         <!-- Use the image tag to add the image and position the site title on top of it-->
-        <h1>Lone Starfish</h1>
         <img src="images/lone-starfish-wide.jpg" alt="Photo of starfish in the ocean water">
+        <h1>Lone Starfish</h1>
       </header>
 
       <nav>
         <ul>
           <li>
-            <a href"HOME">HOMEPAGE</a>
+            <a href=index.html>HOME</a>
           </li>
-          <li>
-            STORY
+          <li class="splitter">
+            <a href=index.html>STORY</a>
           </li>
-          <li>
-            CONTACT
+          <li class="splitter">
+            <a href="#form">CONTACT</a>
           </li>
         </ul>
       </nav>
 
       <article> <!-- We can use sections or divs to seperate text, Class 6 @ 2:42-->
-        <h2>Life of a Starfish</h2>
+        <h2>Life of a Starfish</h2><br>
         <img src="images/lone-starfish.jpg" alt="Closeup of starfish">
         <!--Had img inside paragraph but going to try having it outside to see if works the same-->
         <p>
@@ -42,7 +42,7 @@
       <div>
         <h2>Facts About Starfish</h2>
         <!-- Noticed he has the indent removed in the mock up, so try to do that as well-->
-        <ul>
+        <ul class="facts">
           <li>
             Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. 
           </li>
@@ -56,10 +56,10 @@
             Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.
           </li>
         </ul>
+        <h2>Contact to learn more</h2>
       </div>
 
-      <div>
-        <h2>Contact to Learn More</h2>
+      <div id="form">
         <form action="index.html" method="post">
           <label for="fullname">Your Name</label> <br>
           <input id="fullname" type="text" name="fullname"> <br>
@@ -67,21 +67,19 @@
           <input id="email" type="email" name="email"> <br>
           <label for="message">Message</label> <br>
           <input id="message" type="text" name="message">
-        </form>
-        <br>
-        <h3>Would you like to visit the starfish?</h3>
-        <form action="thanks.html" method="post">
+            <h3>Would you like to visit the starfish?</h3>
+            <!-- Tried hard to get the h3 in this div to break and give space between the message text box but couldn't figure it out-->
           <label for="yes">Yes</label>
           <input type="radio" id="yes" name="yes">
           <label for="no">No</label>
           <input type="radio" id="no" name="no">
           <label for="maybe">Maybe</label>
           <input type="radio" id="maybe" name="maybe">
+          <div><button type="submit">SEND</button></div>
         </form>
-        <span>SEND</span>
       </div>
 
-      <footer>&copy;Lone Starfish</footer> <!--Add footer with C an Lone Starfish copyright, &copy; makes logo-->
+      <footer>&copy; Lone Starfish.</footer> <!--Add footer with C an Lone Starfish. copyright, &copy; makes logo-->
     </div>
   </body>
 </html>
