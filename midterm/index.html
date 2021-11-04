@@ -14,22 +14,21 @@
         <!-- Use the image tag to add the image and position the site title on top of it-->
         <img src="images/lone-starfish-wide.jpg" alt="Photo of starfish in the ocean water">
         <h1>Lone Starfish</h1>
+        <nav>
+          <ul>
+            <li class="home">
+              <a href=index.html>HOME</a>
+            </li>
+            <li class="story">
+              <a href=index.html>STORY</a>
+            </li>
+            <li class="contact">
+              <a href="#form">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
       </header>
-
-      <nav>
-        <ul>
-          <li>
-            <a href=index.html>HOME</a>
-          </li>
-          <li class="splitter">
-            <a href=index.html>STORY</a>
-          </li>
-          <li class="splitter">
-            <a href="#form">CONTACT</a>
-          </li>
-        </ul>
-      </nav>
-
+      <!-- tried lastly to move nav into header to fix the issue of the gap at the top of my nav. didn't work.-->
       <article> <!-- We can use sections or divs to seperate text, Class 6 @ 2:42-->
         <h2>Life of a Starfish</h2><br>
         <img src="images/lone-starfish.jpg" alt="Closeup of starfish">
@@ -60,15 +59,17 @@
       </div>
 
       <div id="form">
-        <form action="index.html" method="post">
+        <form action="index.html" method="get">
           <label for="fullname">Your Name</label> <br>
           <input id="fullname" type="text" name="fullname"> <br>
           <label for="email">Your Email</label> <br>
           <input id="email" type="email" name="email"> <br>
-          <label for="message">Message</label> <br>
+          <label for="message"> Your Message</label> <br>
           <input id="message" type="text" name="message">
-            <h3>Would you like to visit the starfish?</h3>
-            <!-- Tried hard to get the h3 in this div to break and give space between the message text box but couldn't figure it out-->
+        </form>
+        <h3>Would you like to visit the starfish?</h3> <br><br><!-- Tried hard to get the h3 in this div to break and give space between the message text box but couldn't figure it out-->
+        <!-- going to try seperating the forms? Hoping that will fix issue without using breaks-->
+        <form action="index.html" method="get">
           <label for="yes">Yes</label>
           <input type="radio" id="yes" name="yes">
           <label for="no">No</label>
