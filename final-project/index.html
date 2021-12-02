@@ -3,11 +3,62 @@
   <head>
     <!-- Document information -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>final-project</title>
-   <!-- <link href="styles/final.css" rel="stylesheet"> -->
+    <!-- Comments for future CSS files
+    <link href="styles/icons.css" rel="stylesheet">
+    <link href="styles/final.css" rel="stylesheet">
+    -->
   </head>
   <body>
     <!-- Document Content for final html mockup -->
-    <p> testing repo </p>
+    <div class="container">
+      <!-- <p>testing repo</p> -->
+      <header>
+        <img src="images/logo.png" alt="Yellow stars in square" class="logo">
+        <nav>
+          <ul>
+            <!-- Using ID's hoping I can later link them to the proper sections of the page,
+              may have to just link to index.html if this doesn't work-->
+            <li id="home">
+              Home
+            </li>
+            <li id="about us">
+              About Us
+            </li>
+            <li id="services">
+              Services
+            </li>
+            <li id="team">
+              Team
+            </li>
+            <li id="contact">
+              Contact
+            </li>
+          </ul>
+          <form>
+            <!-- form should make the search bar and button functionable -->
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="icon icon-zoom"></i></button>
+          </form>
+        </nav>
+      </header>
+      <section>
+        <img src="images/main-banner.jpg" alt="Three star media office" class="banner">
+        <div class="overlay">
+          <h1>
+            Welcome to Three Star Media
+          </h1>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p> 
+        </div>
+      </section>
+      <footer>
+        <div>&copy; Copyright Three Star Media, 2020</div>
+        <div> All images are taken from <a href="https://unsplash.com/">Unsplash</a></div>
+      </footer>
+    </div>
   </body>
 </html>
