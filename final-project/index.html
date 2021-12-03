@@ -11,12 +11,15 @@
     <link href="styles/final.css" rel="stylesheet">
     -->
   </head>
+<!-----------------------------------------
+SEPERATOR FROM STUFF I DON'T WANT TO TOUCH
+------------------------------------------->
   <body>
     <!-- Document Content for final html mockup -->
     <div class="container">
       <!-- <p>testing connection to repo</p> -->
       <header>
-        <img src="images/logo.png" alt="Yellow stars in square" class="logo">
+        <img src="images/logo.png" alt="Yellow stars in square">
         <nav>
           <ul>
             <!-- Using anchors hoping I can link them to the proper sections of the page using ID's later on,
@@ -25,38 +28,206 @@
               <a href="index.html">Home</a>
             </li>
             <li class="about us">
-              <a href="index.html">About Us</a>
+              <a href="#about us">About Us</a>
             </li>
             <li class="services">
-              <a href="index.html">Services</a>
+              <a href="#our services">Services</a>
             </li>
             <li class="team">
-              <a href="index.html">Team</a>
+              <a href="#our team">Team</a>
             </li>
             <li class="contact">
-              <a href="index.html">About Us</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
           <form>
-            <!-- form should make the search bar and button functionable, added icon but sorta pointless with no css yet-->
+            <!-- form should make the search bar and button functionable, added icon to remind to put them but sorta pointless with no css yet-->
             <input type="search" id="query" name="q" placeholder="Search...">
-            <button type="submit"><i class="icon icon-zoom"></i></button>
+            <button type="submit"> Search <i class="icon icon-zoom"></i></button>
           </form>
         </nav>
       </header>
-      <section>
-        <img src="images/main-banner.jpg" alt="Three star media office" class="banner">
+      <!-------------------------------------------Marking off section------------------------->
+      <section id="banner">
+        <img src="images/main-banner.jpg" alt="Three star media office">
         <div class="banner overlay">
           <h1>
             Welcome to Three Star Media
           </h1>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          </p> 
+          </p>
+          <button class="connect with us button"> Connect with us <i class="icon icon-right"></i></button>
         </div>
       </section>
-<!-------------------------------------------------------------------------------------------------------------------------------------------
---------------------------------------------------------------------------------------------------------------------------------------------->
+      <!------------------------------------Marking off section----------------------->
+      <section id="about us">
+        <img src="images/about-us.jpg" alt="Pingpong table in the office">
+        <h2>
+          About Us
+        </h2>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+      </section>
+      <!-- Trying an id to link it to my nav but afraid the overwritting is going to mess it up when styling
+      ------------------------------------------------Marking this article off for readability and grouping-->
+      <article id="our services">
+        <h2>
+          Our Services
+        </h2>
+        <section class="digital transformation">
+          <img src="images/digital.jpg" alt="Computer and phone">
+          <h3>
+            Digital Transformartion
+          </h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <button class="digital plans button"> Digital Plans <i class="icon icon-right"></i></button>
+        </section>
+        <section class="marketing">
+          <img src="images/marketing.jpg" alt="computer">
+          <h3>
+            Marketing
+          </h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <button class="marketing plans button"> Marketing Plans <i class="icon icon-right"></i></button>
+        </section>
+        <section class="video production">
+          <img src="images/video.jpg" alt="phone with play icon">
+          <h3>
+            Video Production
+          </h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <button class="video plans button"> Video Plans <i class="icon icon-right"></i></button>
+        </section>
+        <section class="web development">
+          <img src="images/web.jpg" alt="phone and pen on notebook">
+          <h3>
+            Web Development
+          </h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <button class="web plans button"> Web Plans <i class="icon icon-right"></i></button>
+        </section>
+        <section class="Print">
+          <img src="images/print.jpg" alt="Newspaper bins">
+          <h3>
+            Print
+          </h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+          <button class="print plans button"> Print Plans <i class="icon icon-right"></i></button>
+        </section>
+      </article>
+      <!-------------------------------------Marking off Section----------->
+      <section class="our vision">
+        <img src="images/vision.jpg" alt="origami paper">
+        <p>
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </p>
+        <button class="learn more button"> Learn More <i class="icon icon-right"></i></button>
+      </section>
+      <!---------------------------------------------Marking off article-->
+      <article id="our team">
+        <h2>
+          Our Team
+        </h2>
+        <section class="john doe">
+          <img src="images/john.jpg" alt="john doe">
+          <h3>
+            John Doe
+          </h3>
+          <h4>
+            CEO and Co-Owner
+          </h4>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </section>
+        <section class="bob rite">
+          <img src="images/bob.jpg" alt="bob rite">
+          <h3>
+            Bob Rite
+          </h3>
+          <h4>
+            CFO and Co-owner
+          </h4>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          </p>
+        </section>
+      </article>
+      <!-------------------------------------------------Marking off article----------->
+      <article id="contact us">
+        <h2>
+          Contact Us
+        </h2>
+        <section class="message">
+          <h3>Send us a message</h3>
+          <form>
+            <label for="fullname">Full name</label>
+            <input id="fullname" type="text">
+            <label for="email">Email</label>
+            <input id="email" type="email">
+            <label for="message">Message</label>
+            <textarea id="message"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+        <!-------------------------------------------------------------------Marking off embedded section-->
+        <section class="location">
+          <h3>Location</h3>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7513.862611740083!2d-75.76011796711602!3d45.34798907972663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1638298506409!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <!------------------------------------------------------Marking off section in article-->
+        <section class="hours">
+          <h3>
+            Hours of operation
+          </h3>
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  Days
+                </th>
+                <th>
+                  Hours
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Monday - Friday
+                </td>
+                <td>
+                  9 AM - 6 PM
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Saturday - Sunday
+                </td>
+                <td>
+                  Closed
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+      <!--------Temp block off for footer I'm content with-->
       <footer>
         <div>&copy; Copyright Three Star Media, 2020</div>
         <div> All images are taken from <a href="https://unsplash.com/">Unsplash</a></div>
