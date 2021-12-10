@@ -6,10 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>final-project</title>
-    <!-- Comments for future CSS files
     <link href="styles/icons.css" rel="stylesheet">
     <link href="styles/final.css" rel="stylesheet">
-    -->
   </head>
   <!--SEPERATOR FROM STUFF I DON'T WANT TO TOUCH-->
   <body>
@@ -22,8 +20,9 @@
           <ul>
             <!--Using anchors hoping I can link them to the proper sections of the page using ID's later on,
               may have to just do <a href="index.html"> if this doesn't work-->
+            <!--PROFESSOR SAID ID'S ARE NEEDED TO GET THE NAMED ANCHORS WORKING IN NAV-->
             <li class="home">
-              <a href="index.html">Home</a>
+              <a href="#query">Home</a>
             </li>
             <li class="about us">
               <a href="#aboutus">About Us</a>
@@ -44,20 +43,21 @@
             <button type="submit"><i class="icon icon-zoom"></i></button>
           </form>
         </nav>
+        <!-- Moving #banner setion into header, professor said it is techinically the header of the website -->
+        <section id="banner">
+          <img src="images/main-banner.jpg" alt="Three star media office">
+          <div class="banner overlay">
+            <h1>
+              Welcome to Three Star Media
+            </h1>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <button class="connect with us button"> Connect with us <i class="icon icon-right"></i></button>
+          </div>
+        </section>
       </header>
-      <!--Marking off section-->
-      <section id="banner">
-        <img src="images/main-banner.jpg" alt="Three star media office">
-        <div class="banner overlay">
-          <h1>
-            Welcome to Three Star Media
-          </h1>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          </p>
-          <button class="connect with us button"> Connect with us <i class="icon icon-right"></i></button>
-        </div>
-      </section>
+
       <!--Marking off section-->
       <section id="aboutus">
         <img src="images/about-us.jpg" alt="Pingpong table in the office">
@@ -231,7 +231,7 @@
       <!--Temp block off for footer I'm content with-->
       <footer>
         <div>&copy; Copyright Three Star Media, 2020</div>
-        <div> All images are taken from <a href="https://unsplash.com/">Unsplash</a></div>
+        <div> All images are taken from <a href="https://unsplash.com/" target="_blank">Unsplash</a></div>
       </footer>
     </div>
   </body>
