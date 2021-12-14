@@ -70,10 +70,10 @@ Overall design and match with the provided mockup
 Defaults
 ************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-.container{
+#container{
 	background: white;
-	max-width: 1200px;
 	font-family: 'Open Sans' , sans-serif;
+	max-width: 1200px;
 }
 
 /************************************************
