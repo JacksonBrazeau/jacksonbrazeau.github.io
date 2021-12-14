@@ -13,38 +13,40 @@
   <body>
     <!--Document Content for final html mockup-->
     <div class="container">
-      <!--<p>testing connection to repo</p>-->
-      <header>
-        <img src="images/logo.png" alt="Yellow stars in square">
-        <nav>
+      <!--<p>testing connection to repo</p>-->  
+      <nav>
+          <div>
+            <img src="images/logo.png" alt="Yellow stars in square">
+          </div>
           <ul>
-            <!--Using anchors hoping I can link them to the proper sections of the page using ID's later on,
-              may have to just do <a href="index.html"> if this doesn't work-->
-            <!--PROFESSOR SAID ID'S ARE NEEDED TO GET THE NAMED ANCHORS WORKING IN NAV-->
-            <li class="home">
-              <a href="#query">Home</a>
-            </li>
-            <li class="about us">
-              <a href="#aboutus">About Us</a>
-            </li>
-            <li class="services">
-              <a href="#ourservices">Services</a>
-            </li>
-            <li class="team">
-              <a href="#ourteam">Team</a>
-            </li>
-            <li class="contact">
-              <a href="#contactus">Contact</a>
-            </li>
-          </ul>
-          <form>
-            <!--form should make the search bar and button functionable, added icon to remind to put them but sorta pointless with no css yet-->
-            <input type="search" id="query" name="q" placeholder="Search...">
-            <button type="submit"><i class="icon icon-zoom"></i></button>
-          </form>
-        </nav>
-        <!-- Moving #banner setion into header, professor said it is techinically the header of the website -->
-        <section id="banner">
+          <!--Using anchors hoping I can link them to the proper sections of the page using ID's later on,
+            may have to just do <a href="index.html"> if this doesn't work-->
+          <!--PROFESSOR SAID ID'S ARE NEEDED TO GET THE NAMED ANCHORS WORKING IN NAV-->
+          <li class="home">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="about us">
+            <a href="#aboutus">About Us</a>
+          </li>
+          <li class="services">
+            <a href="#ourservices">Services</a>
+          </li>
+          <li class="team">
+            <a href="#ourteam">Team</a>
+          </li>
+          <li class="contact">
+            <a href="#contactus">Contact</a>
+          </li>
+        </ul>
+        <form>
+          <!--form should make the search bar and button functionable, added icon to remind to put them but sorta pointless with no css yet-->
+          <input type="search" id="query" name="q" placeholder="Search...">
+          <button type="submit"><i class="icon icon-zoom"></i></button>
+        </form>
+      </nav>
+      <header id="banner">
+        <!-- Moving #banner setion into header, professor said it is the header of the website -->
+        <section>
           <img src="images/main-banner.jpg" alt="Three star media office">
           <div class="banner overlay">
             <h1>
@@ -57,7 +59,6 @@
           </div>
         </section>
       </header>
-
       <!--Marking off section-->
       <section id="aboutus">
         <img src="images/about-us.jpg" alt="Pingpong table in the office">
