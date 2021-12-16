@@ -98,7 +98,10 @@ h4{
 	border-bottom: 2px solid #c78c06;
 	font-weight: 700;
 }
-
+h6{ 
+	color: transparent;
+	font-size: 0px;
+}
 p{
 	margin: 25px 0 0 10px;
 	font-size: .8rem;
@@ -370,47 +373,45 @@ STYLING FOR DESKTOP - Media query
 		margin-top: 20px;
 	}
 	/* OUR TEAM FOR DESKTOP */
-	#ourteam{
+	.bios{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
+
 	}
-	#ourteam section{
+	.bios section{
 		margin:0;
 		padding:0;
 	}
-	#ourteam section:nth-child(1){
+	.bios section:nth-child(1){
 		grid-column: 1 / 1;
 		grid-row: 1 / 1;
 	}
-	#ourteam section:nth-child(2){
+	.bios section:nth-child(2){
 		grid-column: 2 / 2;
 		grid-row: 1 / 1;
 	}
-	#ourteam section:nth-child(3){
+	.bios section:nth-child(3){
 		grid-column: 2 / 2;
 		grid-row: 2 / 2;
 	}
-	#ourteam section:nth-child(4){
+	.bios section:nth-child(4){
 		grid-column: 1 / 1;
 		grid-row: 2 / 2;
 	}
 	/* CONTACT US FOR DESKTOP */
-	#contactus{
+	.contacttiles{
 		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: auto auto;
+
 	}
-	#contactus section:nth-child(1){
-		grid-column: 1 / 1;
-		grid-row: 1 / 1;
+	.contacttiles section:nth-child(1){
+		grid-column: 1 / 2;
+		grid-row: 1 / 2;
 	}
-	#contactus section:nth-child(2){
+	.contacttiles section:nth-child(2){
 		grid-column: 1 / span 2;
 		grid-row: 2 / 2;
-		
+
 	}
-	#contactus section:nth-child(3){
+	.contacttiles section:nth-child(3){
 		grid-column: 2 / 2;
 		grid-row: 1 / 1;
 	}
