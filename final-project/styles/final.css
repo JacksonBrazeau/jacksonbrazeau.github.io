@@ -50,16 +50,16 @@ Create a separate folder for your CSS file **
 Add CSS reset code in the start of the file **
 Mobile-first approach in the styling **
 The maximum width of the container is 1200px **
-Add media query for the screen size of 760px and above
+Add media query for the screen size of 760px and above **
 Use the 'Open Sans' Google font for the webpage **
 Colours values used in the layout #c78c06, #ffe6ac, #222 and white **
-Use of CSS Grid properties for a minimum of one element
-Use of CSS Flexbox properties for a minimum of one element 
+Use of CSS Grid properties for a minimum of one element - Columns and rows for multiple parts in css to get this one done
+Use of CSS Flexbox properties for a minimum of one element **
 Follow proper folder structure and naming conventions **
 CSS has code comments **
 CSS code is valid
-CSS is properly formatted
-Proper link to GitHub Pages site submitted
+CSS is properly formatted **
+Proper link to GitHub Pages site submitted **
 Overall design and match with the provided mockup
 REMEMBER TO EDIT LOREM IPSUM TO SOMEWHAT MATCH THE AMOUNT OF TEXT IN THE BOXES SO STYLES RIGHT AND SOME CLASSES TO HAVE NO SPACES
 ************************************************/
@@ -257,8 +257,9 @@ Styling for mobile first - Contact Us
 	background: #222222;
 	color: #c78c06;
 	padding: 5px;
+	border: 0px;
 	font-size: 1.25rem;
-	margin:0px;
+	margin: 0px;
 	align-self: start;
 }
 .hours{
@@ -291,3 +292,129 @@ footer{
 	color: #c78c06;
 	padding: 10px;
 }
+/* ***********************************************
+**************************************************
+**************************************************
+**************************************************
+STYLING FOR DESKTOP - Media query
+************************************************/
+@media screen and (min-width: 760px){
+	/* NAVIGATATION FOR DESKTOP */
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	nav{
+		padding: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	nav form input{
+		width: 210px;
+	}
+	.container ul{ 
+		display: flex;
+		flex-grow: 1;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-left: 60px;
+		margin-right: 20px;
+	}	
+	.container ul li{
+		padding: 10px 20px;
+	}
+	/* later on try to fix the home anchor to match the square size in the mockup and white margins at larger views*/
+	/* ABOUT US FOR DESKTOP */
+	#aboutus{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.aboutuscontent{
+		padding: 10px;
+		line-height: 1.2;
+	}
+	/* OUR SERVICES FOR DESKTOP */
+	.ourservicesinfo{
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: 1fr, 1fr;
+	}
+	.ourservicesinfo section{
+		display: flex;
+		flex-direction: column;
+	}
+	.ourservicesinfo section:nth-child(1){
+		grid-column: 1 / span 3;
+		grid-row: 1;
+	}
+	.ourservicesinfo section:nth-child(2){
+		grid-column: 4 / span 3;
+		grid-row: 1;
+	}
+	.ourservicesinfo section:nth-child(3){
+		grid-column: 1 / span 2;
+		grid-row: 2;
+	}
+	.ourservicesinfo section:nth-child(4){
+		grid-column: 3 / span 2;
+		grid-row: 2;
+	}
+	.ourservicesinfo section:nth-child(5){
+		grid-column: 5 / span 2;
+		grid-row: 2;
+	}
+	/* OUR VISION FOR DESKTOP */
+	.ourvision{
+		margin-top: 20px;
+	}
+	/* OUR TEAM FOR DESKTOP */
+	#ourteam{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	#ourteam section{
+		margin:0;
+		padding:0;
+	}
+	#ourteam section:nth-child(1){
+		grid-column: 1 / 1;
+		grid-row: 1 / 1;
+	}
+	#ourteam section:nth-child(2){
+		grid-column: 2 / 2;
+		grid-row: 1 / 1;
+	}
+	#ourteam section:nth-child(3){
+		grid-column: 2 / 2;
+		grid-row: 2 / 2;
+	}
+	#ourteam section:nth-child(4){
+		grid-column: 1 / 1;
+		grid-row: 2 / 2;
+	}
+	/* CONTACT US FOR DESKTOP */
+	#contactus{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto;
+	}
+	#contactus section:nth-child(1){
+		grid-column: 1 / 1;
+		grid-row: 1 / 1;
+	}
+	#contactus section:nth-child(2){
+		grid-column: 1 / span 2;
+		grid-row: 2 / 2;
+		
+	}
+	#contactus section:nth-child(3){
+		grid-column: 2 / 2;
+		grid-row: 1 / 1;
+	}
+}
+/* *********************************************
+END OF STYLING FOR DESKTOP - Media query
+************************************************/
