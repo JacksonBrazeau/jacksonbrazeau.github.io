@@ -239,3 +239,55 @@ Styling for mobile first - Our team
 /* ***********************************************
 Styling for mobile first - Contact Us
 ************************************************/
+.message form{
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.message form input{
+	margin: 10px 0 10px 0;
+	height: 30px;
+}
+.message form textarea{
+	margin: 10px 0 20px 0;
+	padding-right: 10px;
+	resize: none;
+}
+.message form button{
+	background: #222222;
+	color: #c78c06;
+	padding: 5px;
+	font-size: 1.25rem;
+	margin:0px;
+	align-self: start;
+}
+.hours{
+	margin: 10px;
+}
+.hours h3{
+	margin-left: 0px;
+}
+table{
+	width: 100%;
+}
+table, th, td{
+	border: 1px solid black;
+	padding: 15px;
+}
+th{
+	background: #ffe6ac;
+}
+.location{
+	margin: 10px;
+}
+.location iframe{
+	width: 100%;
+}
+/* ***********************************************
+Styling for mobile first - Footer
+************************************************/
+footer{
+	background: #222222;
+	color: #c78c06;
+	padding: 10px;
+}
