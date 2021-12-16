@@ -12,10 +12,10 @@
   <!--SEPERATOR FROM STUFF I DON'T WANT TO TOUCH-->
   <body>
     <!--Document Content for final html mockup-->
-    <div id="container">
+    <div class="container">
       <!--<p>testing connection to repo</p>-->  
       <nav>
-          <div>
+          <div class="logo">
             <img src="images/logo.png" alt="Yellow stars in square">
           </div>
           <ul>
@@ -25,7 +25,7 @@
           <li class="home">
             <a href="index.html">Home</a>
           </li>
-          <li class="about us">
+          <li class="aboutus">
             <a href="#aboutus">About Us</a>
           </li>
           <li class="services">
@@ -38,39 +38,41 @@
             <a href="#contactus">Contact</a>
           </li>
         </ul>
-        <form>
+        <form action="index.html" method="post">
           <!--form should make the search bar and button functionable, added icon to remind to put them but sorta pointless with no css yet-->
-          <input type="search" id="query" name="q" placeholder="Search...">
+          <input type="search" id="query" name="search" placeholder="Search...">
           <button type="submit"><i class="icon icon-zoom"></i></button>
         </form>
       </nav>
       <header id="banner">
-        <!-- Moving #banner setion into header, professor said it is the header of the website -->
-        <section>
-          <img src="images/main-banner.jpg" alt="Three star media office">
-          <div class="banner overlay">
-            <h1>
-              Welcome to Three Star Media
-            </h1>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-            <button class="connect with us button"> Connect with us <i class="icon icon-right"></i></button>
-          </div>
-        </section>
+        <!-- Moving #banner setion into header, professor said it's the header of the website -->
+        <!-- Removed img from header to make it background image in css, doing same with ourvision image -->
+        <div class="banneroverlay">
+          <h1>
+            Welcome to Three Star Media
+          </h1>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          </p>
+          <button class="button"> Connect with us <i class="icon icon-right"></i></button>
+        </div>
       </header>
       <!--Marking off section-->
       <section id="aboutus">
-        <img src="images/about-us.jpg" alt="Pingpong table in the office">
-        <h2>
-          About Us
-        </h2>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        </p>
+        <div>
+          <img src="images/about-us.jpg" alt="Pingpong table in the office">
+        </div>
+        <div>
+          <h2>
+            About Us
+          </h2>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          </p>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          </p>
+        </div>
       </section>
       <!--Trying an id to link it to my nav but afraid the overwritting is going to mess it up when styling
       Marking this article off for readability and grouping-->
@@ -78,7 +80,7 @@
         <h2>
           Our Services
         </h2>
-        <section class="digital transformation">
+        <section class="digitaltransformation">
           <img src="images/digital.jpg" alt="Computer and phone">
           <h3>
             Digital Transformartion
@@ -86,7 +88,7 @@
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
-          <button class="digital plans button"> Digital Plans <i class="icon icon-right"></i></button>
+          <button class="button"> Digital Plans <i class="icon icon-right"></i></button>
         </section>
         <section class="marketing">
           <img src="images/marketing.jpg" alt="computer">
@@ -96,9 +98,9 @@
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
-          <button class="marketing plans button"> Marketing Plans <i class="icon icon-right"></i></button>
+          <button class="button"> Marketing Plans <i class="icon icon-right"></i></button>
         </section>
-        <section class="video production">
+        <section class="videoproduction">
           <img src="images/video.jpg" alt="phone with play icon">
           <h3>
             Video Production
@@ -106,9 +108,9 @@
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
-          <button class="video plans button"> Video Plans <i class="icon icon-right"></i></button>
+          <button class="button"> Video Plans <i class="icon icon-right"></i></button>
         </section>
-        <section class="web development">
+        <section class="webdevelopment">
           <img src="images/web.jpg" alt="phone and pen on notebook">
           <h3>
             Web Development
@@ -116,9 +118,9 @@
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
-          <button class="web plans button"> Web Plans <i class="icon icon-right"></i></button>
+          <button class="button"> Web Plans <i class="icon icon-right"></i></button>
         </section>
-        <section class="Print">
+        <section class="print">
           <img src="images/print.jpg" alt="Newspaper bins">
           <h3>
             Print
@@ -126,26 +128,25 @@
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
-          <button class="print plans button"> Print Plans <i class="icon icon-right"></i></button>
+          <button class="button"> Print Plans <i class="icon icon-right"></i></button>
         </section>
       </article>
       <!--Marking off Section-->
-      <section class="our vision">
-        <img src="images/vision.jpg" alt="origami paper">
+      <section class="ourvision">
         <h3>
           Our Vision
         </h3>
         <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         </p>
-        <button class="learn more button"> Learn More <i class="icon icon-right"></i></button>
+        <button class="button"> Learn More <i class="icon icon-right"></i></button>
       </section>
       <!--Marking off article-->
       <article id="ourteam">
         <h2>
           Our Team
         </h2>
-        <section class="john doe">
+        <section class="johndoe">
           <img src="images/john.jpg" alt="john doe">
           <h3>
             John Doe
@@ -157,7 +158,7 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
         </section>
-        <section class="bob rite">
+        <section class="bobrite">
           <img src="images/bob.jpg" alt="bob rite">
           <h3>
             Bob Rite
@@ -177,11 +178,11 @@
         </h2>
         <section class="message">
           <h3>Send us a message</h3>
-          <form>
+          <form action="index.html" method="post">
             <label for="fullname">Full name</label>
-            <input id="fullname" type="text">
+            <input id="fullname" type="text" name="fullname">
             <label for="email">Email</label>
-            <input id="email" type="email">
+            <input id="email" type="email" name="email">
             <label for="message">Message</label>
             <textarea id="message"></textarea>
             <button type="submit">Send</button>
