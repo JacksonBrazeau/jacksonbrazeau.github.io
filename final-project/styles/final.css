@@ -99,8 +99,7 @@ h4{
 	font-weight: 700;
 }
 h6{ 
-	color: transparent;
-	font-size: 0rem;
+	display: none;
 }
 p{
 	margin: 25px 0 0 10px;
