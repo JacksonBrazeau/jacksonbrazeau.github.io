@@ -1,8 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
-*/
-
+   License: none (public domain) */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,16 +44,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-/************************************************
+/* ***********************************************
 Project Requirements
 Create a separate folder for your CSS file **
 Add CSS reset code in the start of the file **
-Mobile-first approach in the styling
+Mobile-first approach in the styling **
 The maximum width of the container is 1200px **
 Add media query for the screen size of 760px and above
-Use the 'Open Sans' Google font for the webpage
-Colours values used in the layout #c78c06, #ffe6ac, #222 and white
+Use the 'Open Sans' Google font for the webpage **
+Colours values used in the layout #c78c06, #ffe6ac, #222 and white **
 Use of CSS Grid properties for a minimum of one element
 Use of CSS Flexbox properties for a minimum of one element 
 Follow proper folder structure and naming conventions **
@@ -64,18 +61,181 @@ CSS code is valid
 CSS is properly formatted
 Proper link to GitHub Pages site submitted
 Overall design and match with the provided mockup
+REMEMBER TO EDIT LOREM IPSUM TO SOMEWHAT MATCH THE AMOUNT OF TEXT IN THE BOXES SO STYLES RIGHT AND SOME CLASSES TO HAVE NO SPACES
 ************************************************/
-
-/************************************************
-Defaults
+/* ***********************************************
+Default sizes, fonts and buttons for project
 ************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-#container{
-	background: white;
-	font-family: 'Open Sans' , sans-serif;
-	max-width: 1200px;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+.container{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 0 auto;
+}
+h1{
+	padding-top: 20px;
+	line-height: 1.5;
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin: 25px 0 25px 10px;
 }
 
-/************************************************
-Style for final
+h2{
+	font-size: 2rem;
+	margin: 40px 0 15px 10px;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 1.5rem;
+	margin: 25px 0 25px 10px;
+	font-weight: 700;
+}
+
+h4{
+	font-size: .8rem;
+	margin-left: 10px;
+	border-bottom: 2px solid #c78c06;
+	font-weight: 700;
+}
+
+p{
+	margin: 25px 0 0 10px;
+	font-size: .8rem;
+}
+
+.icon-right{
+	padding-left: 10px;
+}
+
+.button{
+	color:white;
+	background-color: #222222;
+	padding: 25px 25px;
+	border: none;
+	margin: 10px;
+	display: inline-block;
+	text-decoration: none;
+}
+/* ***********************************************
+Style for mobile first - Navigation
+************************************************/
+nav{
+	background: #222222;
+	padding: 10px;
+}
+nav li{
+	background: #222222;
+	text-align: center;
+	padding: 10px;
+}
+nav li a{
+	color: #c78c06;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+}
+.logo{
+	background: #c78c06;
+}
+.home a{
+	color: #222222;
+	background: #c78c06;
+} /* Try to get the yellow box to match up with the logo background later on */
+nav form{
+	background: #222222;
+	display: flex;
+}
+nav form input{
+	flex-grow: 1;
+}
+nav form button{
+	background: #222222;
+	color: #c78c06;
+	border: 1px solid #c78c06;
+	display: inline-block;
+	padding: 5px;	
+}
+.icon-zoom{
+	font-size: 1.5rem;
+}
+/* ***********************************************
+Style for mobile first - Header/Welcome
+************************************************/
+#banner{
+	background-image: url(../images/main-banner.jpg);
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.banneroverlay{
+	background: #00000088;
+	color: white;
+}
+.banneroverlay .button{
+	background: #c78c06;
+	color: #222222;
+}
+/* ***********************************************
+Styling for mobile first - About us
+************************************************/
+#aboutus{
+	background: #ffe6ac;
+	padding: 10px;
+}
+#aboutus img{
+	width: 100%;
+}
+#aboutus h2, #aboutus p{
+	margin-left: 0px;
+}
+/* ***********************************************
+Styling for mobile first - Our Services
+************************************************/
+#ourservices section{ /* Might edit with article and sections when finalizing desktop sfor the digital transformation and marketing boxes to work */
+	background: #ffe6ac;
+	width: 100%;
+	margin: 10px;
+}
+#ourservices img{
+	width: 100%;
+}
+/* ***********************************************
+Styling for mobile first - Our Vision
+************************************************/
+.ourvision{
+	color: white;
+	background-image: url("../images/vision.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 10px;
+}
+.ourvision .button{
+	border: 1px solid #c78c06;
+}
+/* ***********************************************
+Styling for mobile first - Our team
+************************************************/
+#ourteam{
+	margin: 10px;
+}
+#ourteam section{
+	background: #ffe6ac;
+	margin: 10px;
+	padding-bottom: 25px;
+}
+#ourteam img{
+	width: 100%;
+}
+#ourteam h3{
+	margin-bottom: 10px;
+}
+/* ***********************************************
+Styling for mobile first - Contact Us
 ************************************************/
